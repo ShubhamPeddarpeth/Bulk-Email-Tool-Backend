@@ -22,9 +22,7 @@ const Connection = async () => {
   try {
     await mongoose.connect(DB_URI, {
       useNewUrlParser: true,
-      useUnifiedTopology: true,
-      useCreateIndex: true, // Enable index creation
-      poolSize: 10, // Example pool size, adjust as needed
+      useUnifiedTopology: true, 
     });
     console.log("Database connected successfully");
   } catch (error) {
